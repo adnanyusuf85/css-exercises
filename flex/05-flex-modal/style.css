@@ -16,7 +16,7 @@ body {
 }
 
 .modal {
-  background: white;
+  background: rgb(248, 248, 248);
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
@@ -33,6 +33,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  margin-top:24px;
+
 }
 
 .close-button {
@@ -48,6 +51,8 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  margin-bottom: 32px;
+  flex-shrink: 0;
 }
 
 button {
@@ -66,4 +71,45 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* solution */
+.modal{
+  display: flex;
+  padding: 16px 16px 32px 24px;
+  gap:24px;
+ 
+}
+
+.right-top{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.header{
+  font-weight: 800;
+  font-size:1.2rem;
+  color:rgb(116, 111, 111);
+}
+.right{
+
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.right-bottom{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap:8px;
+}
+
+.text{
+  font-size:0.9rem;
+  line-height: 1.3rem;
+  color:rgb(116, 111, 111);
+  padding-bottom:16px;
+  margin-right: 32px;
 }
